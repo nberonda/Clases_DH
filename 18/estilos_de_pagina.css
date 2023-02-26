@@ -1,0 +1,35 @@
+p {
+    font-family: Arial; 
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    }
+
+h2 {
+    color: #f05331 /* se puede usar el nombre, hexadecimal, RGB o RGBA de cada color */
+}
+
+h3 {
+    color: #f05331; /* se puede usar el nombre, hexadecimal, RGB o RGBA de cada color */
+    color: rgba(122,50,125,0.5);  /* el ultimo numero represena la opciadad, del 0 al 1. */
+    color: rgb(255,100,50);
+    background-color: goldenrod;
+}
+
+p {
+    opacity: 0.5; /* mas cerca del 0 masyor opcidad */
+    
+}
+
+
+body {
+    background-color: cadetblue;
+    background-image: url('../img/bici.jpg');
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: fixed; /* fixed, scroll, inherit, initial */
+    background-size: 130px; /* en pixeles, primer valor representa el ancho y el segundo el alto,
+     tambien recive como valor: contain cover, inherit.*/
+}

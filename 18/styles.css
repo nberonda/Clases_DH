@@ -1,0 +1,47 @@
+/* selector{
+    propiedad: valor;
+} */
+
+/* tipos de selectores */
+
+p {    /* selector de etiqueta */
+    font-size: 15px;
+};
+
+.texto-rojo {   /* selector de clase. Se usa el . seguido de su nombre de clase, */
+    color:red; /* debe ser el mismo que en el html  */
+};
+
+.noticia h2 { /* selectores descendente, modifica los h2 dentro de un articulo de clase noticia */
+    font-size: 35px;
+};
+
+body {font-family: sans-serif};
+/* selector, propiedad, valor */
+
+body {                            /* selector */
+    background-color: purple;     
+    font-family: sans-serif;      /* propiedades y valores */
+    text-align: center;
+};
+
+/* selectores de ID */
+
+#saludo {color: blue};   /* se usa el # seguido de su nombre de ID */
+
+/* selectores cominados */
+
+h2.subtitulo {color: yellow}; /* son una mezcla de los anteriores,
+ solo hace falta agregar un selector al lado del otro */
+
+
+ /* ejercicios */
+
+ /* Más selectores */
+
+ h3 {color: blue}
+
+.negrita {font-weight: bold}
+
+#gigante {font-size: 40px}
+
