@@ -1,0 +1,42 @@
+/* Ejercicio */
+
+/* estilizando el sitio */
+
+/* Para este ejercicio contamos con una pequeña estructura ya creada en el index.html.
+ Esta está formada por un <header>, una <section> y por último un <footer>. 
+¡Nuestro trabajo será estilizar el sitio! */
+
+header {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 28px;
+    border-bottom: solid 3px indigo;
+    padding: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section {
+    width: 50%;
+    margin-left: 25%;
+    background-color: gainsboro;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 12px;
+    border: black dashed 1px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: rebeccapurple;
+    color: white;
+    border-top: solid 1px lightseagreen;
+    padding: 12px;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}

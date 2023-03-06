@@ -1,0 +1,50 @@
+/* Son un conjunto de reglas de CSS que nos permiten cambiar los estilos de los elementos 
+en función de las características del dispositivo que esté visualizando nuestro sitio.
+ */
+
+ /* Por lo general, se escriben al final de nuestra hoja de CSS. */
+
+ @media (min-width: 460px){  
+    /* Al especificar min-width estamos diciendo: “si como mínimo el viewport
+    tiene N píxeles de ancho, apliquemos estas reglas...*/
+    body {
+        background: red;
+    }
+}
+
+@media (max-width: 460px) and (orientation: landscape){     
+    /* ...y además el dispositivo está en posición 
+     vertical/horizontal, apliquemos estas reglas”.*/
+    body {
+        background: blue;
+    }
+}
+
+/* RECOMENDADO: Mobile first
+
+Si utilizamos mobile first como estrategia de diseño,
+ la idea es determinar de manera general las reglas CSS
+  para pequeñas pantallas para luego, a través de media queries,
+   ir aclarando el comportamiento en viewports más grandes. 
+*/
+
+body {
+    background: red;
+}
+
+@media (min-width: 460px){
+    /* Tablets */
+}
+
+@media (min-width: 768px){
+    /* Laptop */
+}
+
+
+/* Medidas mas utilizadas:
+
+0-480px: smaller phones
+481-768px:tamblets and larger phones
+769-1279px: laptops, larger tablets in landscape and small desktops
+1280px or +: larger desktops and monitors
+*/
