@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="/registro" method="POST">
+        <div>
+            <label for="Nombre de Usuario">Nombre de Usuario</label>
+            <input name="usuario" type="text" id="Nombre de Usuario" required placeholder="user!">
+        </div>
+        <div>
+            <label for="Contraseña">Contraseña</label>
+            <input name="pass" type="password" id="Contraseña" required placeholder="password!">
+        </div>
+        <div>
+            <label for="Direccion de Correo">Direccion de Correo</label>
+            <input name="mail" type="email" placeholder="ejemplo@mail.com" required>
+        </div>
+        <div>
+            <label for="Descripcion">Descripción</label>
+            <textarea name="textarea" id="Descripcion" cols="30" rows="10" placeholder="soy un textarea"></textarea>
+        </div>
+        <div>
+            <label for="tel">Número de Teléfono</label>
+            <input type="tel" placeholder="Phone Number">
+        </div>
+        <div>
+            <label for="Edad">Edad</label>
+            <input type="number" placeholder="Edad...">
+        </div>
+        <div>
+            <select name="select" id="">
+            <option selected disabled value="options">options</option>
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            </select>
+        </div>
+        <div>
+            <label>Seleccione un color:</label>
+            <select name="color" required>
+                <option disabled selected></option>
+                <option value="#ff0000">Rojo</option>
+                <option value="#00ff00">Verde</option>
+                <option value="#0000ff">Azul</option>
+            </select>
+        </div>
+        <button type="submit">Soy un submit</button>
+        <button type="reset">Soy un reset</button>
+    </form>
+</body>
+</html>
