@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button, checks</title>
+</head>
+<body>
+    <label>     <!-- asi se implementan los radio buttons -->
+        <input name="terminos" type="radio" required> Acepto los términos. <!-- no necesita value, ya que llegara con el valor "on" por defecto. -->
+        <input name="terminos" type="radio" value="no"> No Acepto los términos.
+    </label>    <!-- Para que solo se pueda elegir uno, se les asigna el mismo valor en el atributo name -->
+
+    <br>
+    <br>
+
+    <label> <!-- Así se implementan los checkbox (pueden tener el mismo name para agruparlos)-->
+        <input type="checkbox" name="pasatiempos" value="tv"> Ver TV
+    </label>
+    <label>
+        <input type="checkbox" name="pasatiempos" value="js"> Aprender JavaScript
+    </label>
+    <label>
+        <input type="checkbox" name="pasatiempos" value="html"> Practicar HTML
+    </label> <!-- se envia la informacion escrita en el atributo value. -->
+</body>
+</html>

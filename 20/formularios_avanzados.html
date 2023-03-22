@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Avanzados</title>
+</head>
+<body>
+    <label for="fechaNacimiento"> Fecha de Nacimiento: </label>
+    <input type="date" name="fechaNacimiento" id="fechaNacimiento" min="2000-01-01" max="2003-01-01"> <!-- se le puede añadir una fecha minima o maxima que puede ser ingresada -->
+    <br>
+    <label for="fechaEstablecida"> Fecha ya establecida: </label>
+    <input type="date" name="fechaEstablecida" id="fechaEstablecida" value="1985-08-28"> <!-- si queremos que ya tenga una fecha establecida, se le ppuede asignar una con el atributo value -->
+    
+    <br>
+    <br>
+
+    <input type="file" name="imagenDePerfil" id="imagenDePerfil" accept=".jpg, .png"> <!-- se puede definir que tipos de archivo acepta, con el atributo "accept" -->
+    <br>
+    <input type="file" name="fotos" id="fotos" multiple> <!-- para que se pueda poner mas de un archivo, se le agrega el atributo "multiple" -->
+    
+    <br>
+    <br>
+
+    <!-- VALIDACION DE FORMULARIO -->
+    <div>
+        <label>Nombre completo:</label>
+        <input type="text" name="nombreUsuario">
+        <span class="feedback"><!-- se establece la respuesta del feedback en JavaScript --></span>
+    </div>
+</body>
+</html>
+
+<!-- EJERCICIOS -->
+
+<select name="mes">
+    <option value="1">Enero</option>
+    <option value="2">Febrero</option>
+    <option value="3">Marzo</option>
+    <option value="4">Abril</option>
+    <option value="5">Mayo</option>
+    <option value="6">Junio</option>
+    <option value="7">Julio</option>
+    <option value="8">Agosto</option>
+    <option value="9">Septiembre</option>
+    <option value="10">Octubre</option>
+    <option value="11">Noviembre</option>
+    <option value="12">Diciembre</option>
+</select>
