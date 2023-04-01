@@ -1,0 +1,36 @@
+.caja-azul {
+    position: relative; /* en relacion a su lugar oirginal */
+    top: 50px;
+    right: 50px;
+}
+
+.caja-uno {
+    position: absolute; /* en relacion al body */
+    top: 50px;
+    bottom: 50px;
+}
+
+/* si estan dentro de un contenedor, seguira disponiendose segun el body, a menos que el contenedor tenga el valor "position: relative" */
+
+.caja-roja {
+    position: fixed; /* en relacion a los costados de la ventana del navegador. por mas que hagamos */
+    top: 50px;       /* scroll, el elemento se mantendra fijo. */
+    right: 50px;
+}
+
+/* Z-Index */
+
+/* Solo se puede modificar en elementos que tengan el valor position: absolute, fixed o relative. */
+
+/* Cualquier elemento que se le asigne position, se mostrará por encima del resto y tendrá por defecto un valor de "z-index> 0"*/
+
+.caja-1 {
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.caja-2 {
+    position: relative;
+    z-index: 10;    /* Se mostrará por encima de la caja 1, ya que tiene un valor mayor en el z-index */
+}
