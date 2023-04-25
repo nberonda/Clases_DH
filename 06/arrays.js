@@ -197,16 +197,20 @@ let escolares = [
     }
   ]
 
-  escolares.unshift ({
+  escolares.unshift (
+    {
     nombre: 'Mariana',
     promedio: 9,
     curso: 'Full Stack',
-  });
+    }
+  );
 
-  escolares.unshift ({
+  escolares.unshift (
+    {
     nombre: 'Francisco',
     promedio: 2,
     curso: 'Android',
-  })
+    }
+  )
 
 console.log (escolares);

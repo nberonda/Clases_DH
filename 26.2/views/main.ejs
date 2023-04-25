@@ -1,0 +1,26 @@
+<html>
+    <%- include('./partials/head') %>   <!-- se usa include para incluir un fragmento parcial reutilizable, para no tener ue hacerlo en cada pagina -->
+
+    <body>
+        <%- include('./partials/header') %>
+        
+        <h1>Bienvenido a <%= tituloDelSitio %></h1>
+        
+        <p>Este es el 1er parrafo de mi pagina web</p>
+
+        <h2>Listado de Productos</h2>
+
+        <ul>
+
+            <% for(const unProducto of listadoDeProductos) { %>             
+                <li>
+                    <b>Nombre:</b> <% unProducto.nombre %>
+                    <b>Precio:</b> <% unProducto.precio %>
+                </li>
+            <% } %>
+
+        </ul>
+
+    </body>
+
+</html>
