@@ -1,0 +1,10 @@
+<!-- se necesita una dependencia de node, para poder usar los metodos put y delete.
+la misma se llama "method-override" -->
+
+<!-- es necesario agregar un query string al final del action, que especifique que se va a utilizar el metodo put o delete. -->
+
+<form action="/usuarios/__/actualizar?_method=PUT" method="POST"></form>
+
+<form action="/users/delete/<% users[i].id %>/?_method=DELETE" method="post">
+    <button type="submit">DELETE</button>
+</form>

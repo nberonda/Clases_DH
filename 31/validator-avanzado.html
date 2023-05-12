@@ -1,0 +1,17 @@
+<% if (locals && locals.mensajesDeError) { %>
+    <% for (let error in mensajesDeError) { %>
+        <p> <%= mensajesDeError[error].msg %></p>
+    <% } %>
+<% } %>
+        
+<!-- por cada error imprime en pantalla el mensaje de error correspondiente -->
+
+<% if (locals.errors) {
+    errores.forEach(error => { %>
+        <p class="feedback is-danger"> <% error.msg %> </p>
+    <% })
+} %>
+
+<input type="name" value="<%= locals.old && old.first_name ? old.first_name : '' %>">
+
+/* se usa para que este quede guardado el campo cuando hay un error */
